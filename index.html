@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Score Keeper</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body class="bg-light">
+    <!-- Page Content -->
+  <center>
+    <div class="col-md-6">
+
+      <h1 class="my-3 text-center text-center">Score Keeper</h1>
+      <div class="container bg-white p-1 rounded mb-4">
+        <h2 class="my-4 text-center text-center" id="titleDisplay">Competition</h2>
+        <p>Playing Score : <span id="scoreDisplay">5</span></p>
+        <div class="row">
+          <div class="col-md-5" id="p1Container">
+            <i class="fa fa-user-circle" style="font-size: 100px;"></i>
+            <h3 id="p1Display">Player One</h3>
+            <button class="btn btn-dark mt-2 p-1" id="p1">Add Score</button>
+          </div>
+          <div class="col-md-2 pt-4">
+            <h1 class="font-weight-bold">
+              <span id="p1Score">0</span> 
+              : 
+              <span id="p2Score">0</span>
+            </h1>
+          </div>
+          <div class="col-md-5" id="p2Container">
+            <i class="fa fa-user-circle" style="font-size: 100px;"></i>
+            <h3 id="p2Display">Player Two</h3>
+            <button class="btn btn-dark mt-2 p-1" id="p2">Add Score</button>
+          </div>
+        </div>
+        <hr>
+        <div class="container p-1 text-left">
+          <form>
+            <div class="form-group">
+              <label>Competition Title</label>
+              <input type="text" id="titleInput" class="form-control p-1">
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Player One Title</label>
+                  <input type="text" id="p1Input" class="form-control p-1">
+                </div>
+                <div class="col-md-6">
+                  <label>Player Two Title</label>
+                  <input type="text" id="p2Input" class="form-control p-1">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Score Limit</label>
+              <input type="number" id="scoreInput" class="form-control p-1">
+            </div>
+          </form>
+          <center> <button class="btn btn-dark p-2" id="reset">Reset</button> </center>
+        </div>
+      </div>
+
+    </div>
+  </center>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Abdullahi Mudi 2022</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Scorekeeper JavaScript -->
+    <script src="scorekeeper.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
